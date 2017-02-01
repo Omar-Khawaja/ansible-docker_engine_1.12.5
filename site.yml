@@ -2,6 +2,8 @@
 
 - name: Install docker-engine 1.12.5
   hosts: docker_hosts
+# You can change hosts to "all" or your group as it is 
+# listed in /etc/ansible/hosts
   remote_user: centos
   become: true
 
