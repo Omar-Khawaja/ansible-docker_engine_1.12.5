@@ -1,0 +1,9 @@
+---
+
+- name: Install docker-engine 1.12.5
+  yum: name=docker-1.12.5 state=installed
+
+- name: Modify /etc/docker/daemon.json to allow node to join swarm
+  template: src=daemon.json dest=/etc/docker/daemon.json
+  notify:
+  - enable and start docker-engine

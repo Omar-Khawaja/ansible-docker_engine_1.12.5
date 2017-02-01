@@ -1,0 +1,4 @@
+---
+
+- name: enable and start docker-engine
+  service: name=docker state=started enabled=yes
