@@ -6,6 +6,7 @@
 # listed in /etc/ansible/hosts
   remote_user: centos
   become: true
+
 # You can change remote_user to root and omit "become: true"
 # if you are logging in as root
 
